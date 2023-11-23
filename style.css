@@ -142,7 +142,7 @@ nav .navigation ul li a:hover{
     transition: 0.4s ease;
     border: none;
     margin-top: 6px;
-    margin-left: 260px;
+    
     border-radius: 10px;
 }
 #home-about-container .home-about-text button:hover{
@@ -150,6 +150,57 @@ nav .navigation ul li a:hover{
     color: #fff;
     background-color: rgb(9, 9, 97);
 }
+/*home-academics*/
+#home-academics-container{
+    display: flex;
+    padding: 5vw 0 4vw 5vw;  
+}
+#home-academics-container img{
+    border-radius: 10px;
+    height: 270px;
+    width: 400px;    
+}
+#home-academics-container .home-aca-text{
+  padding:5vw 8vw 2vw 2vw;
+}
+#home-academics-container .home-aca-text h2{
+    color: rgb(8, 8, 8);
+}
+#home-academics-container .home-aca-text p{
+    color: rgb(9, 9, 97);   
+}
+#home-academics-container .home-aca-text button{
+    text-decoration:none;
+    font-size:14px;
+    padding: 8px 14px;
+    background-color: #fff;
+    font-weight: 500;
+    height: 30px;
+    color: #fff;
+    background-color: goldenrod;
+    transition: 0.4s ease;
+    border: none;
+    margin-top: 6px;
+    
+    border-radius: 10px;
+}
+#home-academics-container .home-aca-text button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(9, 9, 97);
+}
+#home-academics-container .home-aca-text a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight: 500;
+    color: rgb(9, 9, 97);   
+}
+#home-academics-container .home-aca-text a:hover{
+    color: goldenrod;
+    font-size: 17px;
+    transition: 0.4s ease-in-out;
+}
+
 /*Features*/
 #features{
     padding: 5vw 8vw 0vw 8vw;
@@ -175,7 +226,6 @@ nav .navigation ul li a:hover{
     font-weight:300px;
     color: #000;
 }
-
    
 /*Short Courses*/
 #courses{
@@ -205,8 +255,8 @@ nav .navigation ul li a:hover{
     font-size: 14px;
 }
 #courses .short-courses .info .cost{
-    background-color: rgb(206, 166, 8);
-    color: #161616;
+    background-color: rgb(9, 9, 97);
+    color: #fff;
     line-height: 100px;
     width: 100px;
     height: 100px;
@@ -285,10 +335,11 @@ nav .navigation ul li a:hover{
     font-weight: 500;
     border-radius: 5px;
 }
- #registration .form a.blue:hover{
+#registration .form a.blue:hover{
     color: #fff;
     background-color: goldenrod;
 }
+
 /*About-page*/
 #about{
     background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url(https://media.istockphoto.com/id/1420039843/photo/cloud-computing-backup-cyber-security-fingerprint-identity-encryption-technology.jpg?s=612x612&w=0&k=20&c=VX6v1RYhmfjQw8sJ7_MMwun5P5FQwmTkvQEL2WXetIo=);
@@ -298,7 +349,6 @@ nav .navigation ul li a:hover{
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -319,7 +369,6 @@ nav .navigation ul li a:hover{
 }
 #about-container{
     display: flex;
-    
     padding: 2vw 0 4vw 5vw;  
 }
 #about-container .about-text{
@@ -330,6 +379,102 @@ nav .navigation ul li a:hover{
 }
 #about-container .about-text p{
     color: rgb(9, 9, 97);
+}
+
+/*Academics*/
+#academics{
+    background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url(https://media.istockphoto.com/id/1420039843/photo/cloud-computing-backup-cyber-security-fingerprint-identity-encryption-technology.jpg?s=612x612&w=0&k=20&c=VX6v1RYhmfjQw8sJ7_MMwun5P5FQwmTkvQEL2WXetIo=);
+    padding: 40px;
+    width:100%;
+    height:65vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#academics h2{
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px;
+    
+}
+#academics-body{
+    margin-top: 100px; 
+}
+#academics-body h1{
+    color: rgb(9, 9, 97);
+    padding-left:5vw ; 
+    text-align: center;  
+}
+#academics-body .aca-info{
+    color: rgb(72, 72, 75);
+}
+#academics-body .aca-program{
+display: flex;
+justify-content: center;
+padding: 3vw 5vw ;
+}
+#academics-body .aca-program img{
+    width: 400px;
+    height:300px;
+    margin-left: 10%;
+    border-radius: 15px;
+}
+#academics-body .aca-heading-info{
+    padding: 7vw 5vw ;
+}
+#academics-body .aca-heading-info h2{
+    color: rgb(9, 9, 97);
+    font-weight: 600;
+}
+#academics-body .aca-heading-info p{
+    color: rgb(72, 72, 75);
+    
+}
+#academics-body .aca-heading-info a button{
+    text-decoration:none;
+    font-size:14px;
+    padding: 7px 14px;
+    background-color: #fff;
+    font-weight: 500;
+    height: 30px;
+    color: #fff;
+    background-color: goldenrod;
+    transition: 0.4s ease;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#academics-body .aca-heading-info a button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(9, 9, 97);
+}
+
+/*News and events*/
+#news{
+    background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url(https://media.istockphoto.com/id/1420039843/photo/cloud-computing-backup-cyber-security-fingerprint-identity-encryption-technology.jpg?s=612x612&w=0&k=20&c=VX6v1RYhmfjQw8sJ7_MMwun5P5FQwmTkvQEL2WXetIo=);
+    padding: 40px;
+    width:100%;
+    height:65vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#news h2{
+    color: white;
+    font-size: 32px;
+    letter-spacing: 1px; 
+}
+.news-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Contact*/
@@ -352,12 +497,12 @@ nav .navigation ul li a:hover{
     letter-spacing: 1px;
 }
 #contact-info {
-    background-image: linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url("https://media.istockphoto.com/id/1048398662/photo/contact-us-symbols-on-toy-blocks-contact-us-and-crm-concept.webp?b=1&s=170667a&w=0&k=20&c=pkJUfZujMjJchH5WWnHNtRmlNiuUFLhMa-6FyTU-JV8=");
+    background-image: linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url("https://img.freepik.com/premium-photo/close-up-contact-us-word_352439-2128.jpg?size=626&ext=jpg&ga=GA1.1.1402861416.1683954514&semt=ais");
     padding: 6vw 8vw;
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position:center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -365,47 +510,71 @@ nav .navigation ul li a:hover{
 }
 #contact-info i{
     font-size: 25px; 
-    color:rgb(9, 9, 97);
+    color:#000;
 }
 #contact-info h3{
     text-align: center;
-    color: #000;
+    color:#fff;
     font-size: 18px;   
 }
-#contact-info .form{
+#contact-info h4{
+    text-align: center;
+    color:rgb(9,27,80);
+    font-size: 18px;   
+}
+#contact-info .contactform{
     background: #fff;
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
     padding: 40px;
+    width: 40%;
     box-shadow:  0 8px 32px 0 rgba(0, 0, 0, 0.15);
 }
-#contact-info .form input{
-    margin: 16px 0;
-    padding: 20px 15px;
-    border: 1px solid goldenrod;
+#contact-info .contactform h3{
+    color: #000;
+}
+#contact-info .contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px; 
+}
+#contact-info .contactform .inputbox input,
+#contact-info .contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(9, 9, 97);
     outline: none;
 }
-
-#contact-info .form .button{
-    margin-top: 15px;
-    margin-left: 50px;
-    justify-content: center;
+#contact-info .contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    color: #1f1a1a;
+    
 }
-#contact-info .form a.blue{
+#contact-info .contactform .inputbox input:focus ~ span,
+#contact-info .contactform .inputbox input:valid ~ span,
+#contact-info .contactform .inputbox textarea:focus ~ span,
+#contact-info .contactform .inputbox textarea:valid ~ span{
+    color: goldenrod;
+    transform: translateY(-20px);
+}
+#contact-info .contactform .inputbox input[type="submit"]{
+    width: 100px;
     color: #fff;
+    border: none;
+    cursor: pointer;
     background-color: rgb(9, 9, 97);
-    transition: 0.4s ease;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 12px 14px;
-    font-weight: 500;
-    border-radius: 5px;
+    padding: 8px;
 }
-#contact-info .form a.blue:hover{
-    color: #fff;
-    background-color: goldenrod;
-}
+
 #location h2{
     color: rgb(9, 9, 97);
     text-align: center;
@@ -415,8 +584,6 @@ nav .navigation ul li a:hover{
     width: 100%;
 }
 
-
- 
  /*footer*/ 
 footer{
    margin-top: 20px;
