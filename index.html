@@ -5,24 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Department Of Computer Science </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 <!--navigation-->
     <nav>
         <img src="https://dcs.ug.edu.gh/img/comScience_logo.png" alt="comScience_logo" />
-       <div class="navigation">
+        <div class="navigation">
         <ul>
-            <li><a href="index.html" >HOME</a></li>
-            <li><a href="about.html" >ABOUT</a></li>
-            <li><a href="academics.html" >ACADEMICS</a></li>
-            <li><a href="faculty.html" >FACULTY</a></li>
-            <li><a href="news.html">NEWS AND EVENTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            </ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html" >ABOUT</a></li>
+        <li><a href="./academics.html" >ACADEMICS</a></li>
+        <li><a href="./faculty.html" >FACULTY</a></li>
+        <li><a href="./news.html">EVENTS</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
         </div>
-        </nav>
+    </nav>
  <!--Home-->
         <header id="home">
             <h2>YOUR GATEWAY TO WORLD CLASS COMPUTER SCIENCE EDUCATION</h2>
@@ -164,15 +164,29 @@
             <h6>Grab the opportunity now</h6>
             <h1>Register To Get It</h1>
         </div>
-        <div class="form">
-            <h3>Create An Account NOW!</h3>
-            <input type="text" placeholder="Name" name="" id="">
-            <input type="text" placeholder="Email Address" name="" id="">
-            <input type="text" placeholder="Phone Number" name="" id="">
-            <div class="button">
-            <a class="blue" href="#">Register</a>
-        </div>
-        </div>
+        
+        <form id="form">
+            <h2>Create An Account NOW!</h2>
+            <br>
+            <div class="input-control">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+            <div class="input-control">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" required >
+            </div>
+            <div class="input-control">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" required>  
+            </div>
+            <div class="input-control">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" required >
+               </div>
+            <button type="submit">Register</button>   
+        </form>
+       
      </section>
     <!--Footer--> 
 		<footer>
@@ -213,7 +227,7 @@
             <h3>NEWSLETTER</h3>
             <P>Stay updated with our latest</P>
             <div class="subscribe">
-            <input type="text" placeholder="Enter Your Email Address">
+            <input type="text" placeholder="Enter Your Email Address" re>
             <a href="#" class="yellow"><button>SUBCRIBE</button></a>
             </div>
             <div class="Copyright">Copyright &copy2023 All rights reserved | Department Of Computer Science
