@@ -227,7 +227,7 @@ nav .navigation ul li a:hover{
     color: #000;
 }
    
-/*Short Courses*/
+/*home-Short Courses*/
 #courses{
     padding: 7vw 7vw 0 7vw;
     text-align: center;
@@ -306,39 +306,44 @@ nav .navigation ul li a:hover{
 #registration .reminder h1{
     color: #fff;
 }
-#registration .form{
-    background: #fff;
+#registration #form{
+    width: 350px;
+    background-color: #fff;
     border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+   box-shadow:  0 8px 32px 0 rgba(0, 0, 0, 0.15);
+}
+#registration #form h2{
+    text-align: center;
+    color: rgb(9,27,80);
+}
+#registration #form button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 30%;
+    color: #fff;
+    background-color: rgb(9,27,80);
+    border: none;
+    border-radius: 5px;   
+}
+#registration #form button:hover{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+}
+.input-control{
     display: flex;
     flex-direction: column;
-    padding: 45px;
-    box-shadow:  0 8px 32px 0 rgba(0, 0, 0, 0.15);
-    color: rgb(9, 9, 97);
 }
-#registration .form input{
+.input-control input{
     margin: 16px 0;
     padding: 15px 10px;
     border: 1px solid goldenrod;
     outline: none;
+    display: block;
 }
-#registration .form .button{
-    margin-top: 15px;
-    margin-left: 65px;
-}
-#registration .form a.blue{
-    color: #fff;
-    background-color: rgb(9, 9, 97);
-    transition: 0.4s ease;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 12px 14px;
-    font-weight: 500;
-    border-radius: 5px;
-}
-#registration .form a.blue:hover{
-    color: #fff;
-    background-color: goldenrod;
-}
+
 
 /*About-page*/
 #about{
@@ -380,6 +385,7 @@ nav .navigation ul li a:hover{
 #about-container .about-text p{
     color: rgb(9, 9, 97);
 }
+
 
 /*Academics*/
 #academics{
@@ -453,7 +459,8 @@ padding: 3vw 5vw ;
     background-color: rgb(9, 9, 97);
 }
 
-/*News and events*/
+
+/*Events*/
 #news{
     background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url(https://media.istockphoto.com/id/1420039843/photo/cloud-computing-backup-cyber-security-fingerprint-identity-encryption-technology.jpg?s=612x612&w=0&k=20&c=VX6v1RYhmfjQw8sJ7_MMwun5P5FQwmTkvQEL2WXetIo=);
     padding: 40px;
@@ -471,11 +478,101 @@ padding: 3vw 5vw ;
     font-size: 32px;
     letter-spacing: 1px; 
 }
-.news-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#news-container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(56, 56, 63, 0.7)), url("https://t4.ftcdn.net/jpg/02/95/64/97/240_F_295649777_OqJxKbMl8GAarB9YFn5FgzKJKkgEw0OB.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    
 }
+#news-container .leftBox{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    float: left;
+}
+#news-container .leftBox .content{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 40px;
+
+}
+#news-container .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    float: right;
+}
+#news-container .events h1{
+    margin-top: 30px;
+    text-align: center;
+}
+#news-container .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#news-container .events ul li{
+    list-style: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 150px;
+}
+#news-container .events ul li .time{
+    position: relative;
+    background-color: rgb(9,27,80);
+    box-sizing: border-box;
+    padding: 20px;
+    width: 30%;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+#news-container .events ul li .time h2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 60px;
+}
+#news-container .events ul li .time h2 span{
+    font-size: 30px;
+}
+#news-container .events ul li .details{
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+#news-container .events ul li .details a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border:1px solid;
+    border-radius: 5px;
+    width: 130px;
+    background-color: rgb(9, 9, 97);
+    color: #fff;
+    text-align: center;
+}
+#news-container .events ul li .details a:hover{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 /*Contact*/
 #contact{
@@ -566,7 +663,7 @@ padding: 3vw 5vw ;
     color: goldenrod;
     transform: translateY(-20px);
 }
-#contact-info .contactform .inputbox input[type="submit"]{
+#contact-info .contactform .inputbox button{
     width: 100px;
     color: #fff;
     border: none;
@@ -574,7 +671,11 @@ padding: 3vw 5vw ;
     background-color: rgb(9, 9, 97);
     padding: 8px;
 }
-
+#contact-info .contactform .inputbox button:hover{
+    background-color: goldenrod;
+    color: #fff;
+    cursor: pointer;
+}
 #location h2{
     color: rgb(9, 9, 97);
     text-align: center;
@@ -582,6 +683,78 @@ padding: 3vw 5vw ;
 }
 #location iframe{
     width: 100%;
+}
+
+
+/*Undergrad_courses*/
+.search-box{
+    width: 350px;
+    background-color: #eeeaea;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.row input{
+    flex: 1;
+    height: 17px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+button i{
+    cursor: pointer;
+}
+/*Short courses*/
+#courses-container{
+    padding: 7vw 7vw 0 7vw;
+    text-align: center;
+}
+#courses-container .course-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+#courses-container .courses-body{
+    background-color: #b1a7a7;
+    height: 95%;
+    width: 32%;
+    position: relative;
+}
+#courses-container .courses-body img{
+    width: 100%;
+    height:60%;
+    background-size:cover;
+    background-position: center;
+}
+#courses-container .courses-body .info{
+    padding: 12px 12px; 
+}
+#courses-container .courses-body .info i{
+    color: #42413e;
+    font-size: 14px;
+}
+#courses-container .courses-body .cost{
+    background-color: rgb(9, 9, 97);
+    color: #fff;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+    
 }
 
  /*footer*/ 
