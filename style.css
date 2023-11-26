@@ -761,32 +761,36 @@ padding: 3vw 5vw ;
 
 
 /*Undergrad_courses*/
-.search-box{
-    width: 350px;
-    background-color: #eeeaea;
-    margin: 200px auto 0;
-    border-radius: 5px;
+#undergrad-overview{
+    text-align: center;
+    padding: 3vw 8vw;
 }
-.row{
+#undergrad-overview h2{
+    color: goldenrod;
+}
+#undergrad-courses h2{
+    text-align: center;
+    color: goldenrod;
+}
+#undergrad-courses p{
+    text-align: center;
+}
+#undergrad-courses .undergrad-details{
     display: flex;
-    align-items: center;
-    padding: 10px 15px;
+    justify-content: space-between;
+    padding: 3vw 8vw;
 }
-.row input{
-    flex: 1;
-    height: 17px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
+#undergrad-courses .level{
+    margin-right: 5px;
 }
-button{
-    background: transparent;
-    border: 0;
-    outline: 0;
+#undergrad-courses .level li{
+    list-style: none;  
 }
-button i{
-    cursor: pointer;
+#practical{
+    text-align: center;
+}
+#practical h2{
+    color: goldenrod;
 }
 
 /*Short courses*/
