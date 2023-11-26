@@ -363,27 +363,46 @@ nav .navigation ul li a:hover{
     font-size: 32px;
     letter-spacing: 1px;
 }
-#about-wel{
-    margin-right: 9%;
-    margin-left: 9%;
-}
-#about-wel .about-wel-info h1{
-    padding: 15px;
-    text-align: center;
-    color: rgb(15, 15, 15);
-}
 #about-container{
-    display: flex;
-    padding: 2vw 0 4vw 5vw;  
+   display: flex;
+   align-items: center;
+   padding: 8vw 8vw 2vw 8vw;
+}
+#about-container .about-img{
+    width: 60%;
 }
 #about-container .about-text{
-  padding:0 0 2vw 2vw;
+     width: 40%;
+     padding: 30px;
 }
 #about-container .about-text h2{
     color: goldenrod;
+    padding-bottom: 12px;
 }
 #about-container .about-text p{
     color: rgb(9, 9, 97);
+    font-weight: 300;
+    margin-left: 5px;
+}
+#about-container .about-text h4{
+    color: #1f1a1a;
+    margin-left: 6px;
+}
+#about-container .about-text ul{
+    align-items: start;
+}
+#about-container .about-text .about-fea{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+#about-container .about-text .about-fea img{
+    width: 170px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 3px;
 }
 
 
@@ -459,7 +478,62 @@ padding: 3vw 5vw ;
     background-color: rgb(9, 9, 97);
 }
 
+/*Faculty*/
+#faculty{
+    padding: 3vw 8vw;
+    text-align: center;
+}
+#faculty h2{
+    color: goldenrod;
+}
+#hod{
+    text-align: center;
+}
+#hod h2{
+    padding: 2vw 3vw;
+    color: goldenrod;
+}
+#hod p{
+    color: rgb(9,9,97);
 
+}
+#staff h2{
+    padding: 2vw 3vw;
+    color: goldenrod;
+    text-align: center;
+}
+#staff .list{
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+}
+#staff .list li {
+    list-style: none;
+   text-align: center;
+}
+#staff .list li p{
+    color: rgb(9,9,97);
+}
+#staff button{
+    background-color:goldenrod;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 5px;
+}
+#staff button:hover{
+    background-color:rgb(9,9,97);
+    color: #fff;
+    cursor: pointer;  
+}
+#achievements{
+    text-align: center;
+    padding: 3vw 8vw;
+}
+#achievements h2{
+    color: goldenrod;
+}
 /*Events*/
 #news{
     background-image:linear-gradient(rgba(93, 93, 102, 0.3),rgba(58, 58, 71, 0.7)),url(https://media.istockphoto.com/id/1420039843/photo/cloud-computing-backup-cyber-security-fingerprint-identity-encryption-technology.jpg?s=612x612&w=0&k=20&c=VX6v1RYhmfjQw8sJ7_MMwun5P5FQwmTkvQEL2WXetIo=);
@@ -714,6 +788,7 @@ button{
 button i{
     cursor: pointer;
 }
+
 /*Short courses*/
 #courses-container{
     padding: 7vw 7vw 0 7vw;
@@ -757,6 +832,137 @@ button i{
     
 }
 
+/*Complaint form*/    
+.form-container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width:500px;
+    margin: 0 auto;  
+}
+.form-container .header{
+    background-color: rgb(9,9,97);
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    color: #fff;
+}
+.form-container .header h2{
+    margin: 0;
+    text-align: center;
+}
+.form-container .header p{
+    text-align: center;
+}
+.form-container .form{
+    padding: 30px 40px;
+}
+.form-container .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-container .form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-container .form-control textarea,
+.form-container .form-control select,
+.form-container .form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-container .form-control.success input{
+    border-color: #2ecc71;
+}
+.form-container .form-control.error input{
+    border-color: #e74c3c;
+}
+.form-container .form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+.form-container .form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color:  #e74c3c;
+}
+.form-container .form-control i{
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+    right:20px
+}
+.form-container .form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-container .form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+
+}
+.form-container button{
+    background-color: rgb(9, 9, 97);
+    color: #fff;
+    padding: 10px;
+}
+.form-container button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: goldenrod;
+}
+
+/*Overview*/
+#overview-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+#overview-container img{
+    width: 500px;
+    height: 300px;
+}
+.overview-details{
+    text-align: center;
+}
+.overview-details h2{
+    text-align: center;
+    color: goldenrod;
+}
+#research-container{
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+    justify-content: space-between;
+}
+.research-details p{
+    text-align: center;
+}
+.research-details h2{
+    text-align: center;
+    color: goldenrod;
+}
+#research-opp{
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+}
+#research-opp .research-opp-details h2{
+    text-align: center;
+    color: goldenrod;
+}
+#research-opp .research-opp-details p{
+    text-align: center;    
+} 
+.research-opp-details span{
+    padding-left: 43%;
+    color: rgb(9,9,97);
+}
  /*footer*/ 
 footer{
    margin-top: 20px;
