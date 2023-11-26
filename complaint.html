@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Department Of Computer Science </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    </head>
+<body>
+        <div class="form-container">
+            <div class="header">
+            <h2>Department Of Computer Science Complaint Form</h2>
+            <p>Please fill this form to submit any complaints or concerns related to the Department Of Computer Science.</p>
+        </div>
+        <form class="form" id="form"> 
+            <div class="form-control" >
+                <label for="email">Email Address</label>
+                <input type="email" id="email" >
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Name</label>
+                <input type="text" id="username">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="course">Course</label>
+                <select id="course">
+                    <option value=""></option>
+                    <option value="IT">Information Technology</option>
+                    <option value="CS">Computer Science</option>
+                </select>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="studentID">ID</label>
+                <input type="text" id="studentID">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="level">Level</label>
+                <input type="text" id="level" >
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="complaintType">Nature of Complaint</label>
+                <select id="complaintType" >
+                    <option value=""></option>
+                    <option value="academic">Academic Issues</option>
+                    <option value="faculty">Faculty Conduct</option>
+                    <option value="facilities">Facilities/Infrastucture</option>
+                    <option value="other">Other</option>
+                </select>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="complaintDetails">Details of your complaint</label>
+                <textarea id="complaintDetails"></textarea>
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>  
+            <button type="submit">Submit Complaint</button> 
+        </form>
+        </div>
+
+
+        <script>           
+            const form=document.getElementById('form');
+            const email=document.getElementById('email');
+            const username=document.getElementById('username');
+            const course=document.getElementById('course');
+            const studentID=document.getElementById('studentID');
+            const level=document.getElementById('level');
+            const date=document.getElementById('date');
+            const phone=document.getElementById('phone');
+            const complaintType=document.getElementById('complaintType');
+            const complaintDetails=document.getElementById('complaintDetails');
+
+            form.addEventListener('submit',(e)=>{
+                e.preventDefault();
+                
+            });
+            
+
+        
+            function setErrorFor(input,message){
+                const formControl = input.parentElement;  
+                formControl.className = 'form-control error';  
+                const small = formControl.querySelector('small');
+                small.innerHTML = message;   
+            }
+            function setSuccessFor(input){
+                const formControl = input.parentElement;  
+                formControl.className = 'form-control success';   
+            }
+            function setErrorFor(select,message){
+                const formControl = select.parentElement;  
+                formControl.className = 'form-control error';  
+                const small = formControl.querySelector('small');
+                small.innerHTML = message;   
+            }
+            function setSuccessFor(select){
+                const formControl = select.parentElement;  
+                formControl.className = 'form-control success';   
+            }
+        
+            form.addEventListener('submit',function(e){
+                e.preventDefault();
+                
+                if (email.value === '') {
+                    setErrorFor(email, 'This field is required');
+                } else {
+                    setSuccessFor(email);
+                }
+                if (username.value === '') {
+                    setErrorFor(username, 'This field is required');
+                } else {
+                    setSuccessFor(username);
+                }
+                if (course.value === '') {
+                    setErrorFor(course, 'This field is required');
+                } else {
+                    setSuccessFor(course);
+                }
+            
+                if (studentID.value === '') {
+                    setErrorFor(studentID, 'This field is required');
+                } else {
+                    setSuccessFor(studentID);
+                }
+            
+                if (level.value === '') {
+                    setErrorFor(level, 'This field is required');
+                } else {
+                    setSuccessFor(level);
+                }
+            
+                if (date.value === '') {
+                    setErrorFor(date, 'This field is required');
+                } else {
+                    setSuccessFor(date);
+                }
+            
+                if (phone.value === '') {
+                    setErrorFor(phone, 'This field is required');
+                } else {
+                    setSuccessFor(phone);
+                }
+                if (complaintType.value === '') {
+                    setErrorFor(complaintType, 'This field is required');
+                } else {
+                    setSuccessFor(complaintType);
+                }
+                if (complaintDetails.value === '') {
+                    setErrorFor(complaintDetails, 'This field is required');
+                } else {
+                    setSuccessFor(complaintDetails);
+                }
+
+              
+              
+            });    
+        
+</script>
+        
+</body>
+</html>
